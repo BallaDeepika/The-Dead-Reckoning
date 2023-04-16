@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style2.css"
+</head>
+<body>
+   
+        <img id="two" src="bg2.jpg" style="display: none;">  
+     
+        <p id="p1" style="display: none;">When former Indian medical scientist Prathap C reddy and his family get stuck in urbdan grid lock,
+            
+             he senses that its no ordinary traffic jam. His suspicions are confirmed when ,suddenly ,the city erupts into chaos. A lethal virus,spread through a single bite, is turning healthy people into something vicious.He tries to find out the source of the infection from the blood samples of the zombie.Similar virus outbreak has been hit India in 1940's and the vaccine has been kept under the Intelligence Bureau (IB) and Research and Analysis Wing (RAW).
+            He needs to find out the vaccine from these organizations and make a better vaccine for the current pandemic.<br><br> Assume that you're prathap reddy. You were given some clues by the designers. Make the vaccine and save India!!!</p>
+
+        <img src="book1.avif" id="one">
+        <p id="p2" style="color: whitesmoke;">Click me!!</p>
+        <button id="bt" style="display: none;"><a href="clue1.html">START NOW</a></button>
+        <script>
+            var button = document.getElementById("one");
+            button.addEventListener("click", function() {
+            
+                // Add your action here
+                document.getElementById("p1").style.display='block';
+                document.getElementById("bt").style.display='block';
+                document.getElementById("one").style.display='none';
+                document.getElementById("p2").style.display='none';
+            });
+        </script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+*{
+    margin:0;
+    padding:0;
+   }
+   body{
+       height: 100%;
+       width:100vw;
+       overflow-x: hidden;
+      }
+   .main{
+    width: 100%;
+     background: linear-gradient(to top,rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%), url(loc2.jpg); 
+    background-size: cover;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    background-position : center;
+    background-size:cover;
+    height: 109vh;
+    background-attachment: fixed;
+   }
+   .navbar
+   {
+    width: 1200px;
+    height: 75px;
+    margin: auto;
+   }
+   .icon
+   {
+    width: 400px;
+    float:left;
+    height:70px;
+    padding-top:10px;
+    white-space:nowrap;
+    position: relative;
+    right:120px;
+    top:5px;
+   }
+   .logo
+   {
+    color:rgb(87, 76, 248);
+    font-size: 35px;
+    font-family: 'Courier New', monospace;
+    padding-left:20px ;
+    float: left;
+    padding-top:10px;
+   }
+  
+   .content{
+       width: 100%;
+       height: auto;
+       margin: auto;
+       color:white;
+   
+   } 
+  

@@ -1,0 +1,192 @@
+*{
+    margin:0;
+    padding:0;
+   }
+   body{
+       height: 100%;
+       width:100vw;
+       overflow-x: hidden;
+      }
+   .main{
+    width: 100%;
+     background: linear-gradient(to top,rgba(10, 9, 9, 0.699)50%,rgba(10, 9, 9, 0.699)50%), url(car.jpg); 
+    /* background-image: url(interior.webp); */
+    background-size: cover;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    background-position : center;
+    background-size:cover;
+    height: 109vh;
+    background-attachment: fixed;
+   }
+   .navbar
+   {
+    width: 1200px;
+    height: 75px;
+    margin: auto;
+   }
+   .icon
+   {
+    width: 400px;
+    float:left;
+    height:70px;
+    padding-top:10px;
+    white-space:nowrap;
+    position: relative;
+    right:120px;
+    top:5px;
+   }
+   .logo
+   {
+    color:rgb(87, 76, 248);
+    font-size: 35px;
+    font-family: 'Courier New', monospace;
+    padding-left:20px ;
+    float: left;
+    padding-top:10px;
+   }
+   #myText1{
+    position: absolute;
+    left: 220px;
+    font-size: 20px;
+    top:500px;
+    font-family: Times New Roman;
+    font-weight: bold;
+    color: white;
+   }
+
+   .content{
+       width: 100%;
+       height: auto;
+       margin: auto;
+       color:white;
+   
+   } 
+  #image-button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+  }
+  
+  #image-button img {
+    position: relative;
+    right:-290px;
+    top: 470px;
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .move-image1 {
+    position: relative;
+    top:-70px;
+    left:120px;
+    animation: move1 7s infinite;
+  }
+  @keyframes move1 {
+    0% { left: 0; }
+    20% { left: 20%; }30% { left: 30%; }40% { left: 40%; }50% { left: 50%; }60% { left:60%; }
+    70% { left: 70%; }
+    80% { left: 80%; }
+    90% { left: 90%; }
+    100% { left: 0; }
+  }
+
+  .sport {
+    position: absolute;
+    top:150px;
+    right:120px;
+   
+    animation: move 10s infinite;
+  }
+  @keyframes move {
+    0% { left: 0; }
+    20% { left: 20%; }30% { left: 30%; }40% { left: 40%; }50% { left: 50%; }60% { left:60% }
+    70% { left: 70%; }
+    80% { left: 80%; }
+    90% { left: 0; }
+
+  }
+#i1{
+    height: 125px;
+    width: 125px;
+    position: absolute;
+    top:250px ;
+    left: 1240px;
+}
+#i2{
+    height: 120px;
+    width: 120px;
+    position: absolute;
+    top:265px ;
+    left: 140px;
+}
+#tapbt{
+    position: absolute;
+    top: 410px;
+    left: 1180px;
+    width:15%;
+    font-weight:bold;
+    color: rgb(0, 0, 0);
+    text-align: left;
+    padding: 12px 25px;
+    white-space: nowrap;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    background: #f49976;
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+
+}
+#cluep{
+    color: rgb(221, 230, 248);
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Courier New';
+    text-align: justify;
+    position: absolute;
+    top: 380px;
+    left:1130px;
+    width: 320px;
+    height: 300px;
+   }
+#p2{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: block;
+    position: absolute;
+    top: 410px;
+    left:180px;
+  }
+
+      #l1 {
+        font-family: 'Courier New';
+        position: absolute;
+        left: 480px;
+        top: 323px;
+        color: white;
+	      font-weight: bold;
+        font-size: x-large;
+       }
+       #ans{
+        position: absolute;
+        padding: 5px 5px;
+        top: 323px;
+        left: 765px;
+        border: 1px solid #ccc; /* Add a border to the textbox */
+        border-radius: 3px; /* Round the corners of the textbox */
+       }
+     #infp{
+    color: rgb(255, 231, 231);
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Courier New';
+    text-align: justify;
+    position: absolute;
+    top: 250px;
+    left:50px;
+    width: 370px;
+    height: 300px;
+} 

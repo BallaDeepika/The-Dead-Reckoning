@@ -1,0 +1,63 @@
+<html lang="en">
+    <head>
+        <title>HOME</title>
+        <link rel="stylesheet" href=c3style.css>
+    </head>
+    <body>
+        <div class="main">
+          <div class="navbar">
+            <div class="icon">
+              <h2 class="logo">ENIGMA</h2>
+            </div>    
+          </div>
+          <div class="content" id="div1">
+            <img src="manuscript.png" id="i1">  
+            <p id="p1" style="color: whitesmoke;">Info!!</p> 
+            <p id="infp" style="display: none;">"Congratulations on putting those zombies to sleep with your trusty Medi-gun! But, if you want to keep making progress, you'll need to complete a task. 
+                Follow the Instagram link we've provided and name the post that you need to perform as next step."</p>    
+            
+            <img src="inst2.png" id="i2">
+            <p id="p3">Read the Info!!</p>
+            <p id="p2">
+              Tap here to open the post</p>
+
+            <label id="l1">Enter your answer :</label>
+            <input type="text" id="tb">
+          </div> 
+        </div>   
+     <script>
+         var button = document.getElementById("i1");
+        button.addEventListener("click", function() {
+
+        document.getElementById("infp").style.display='block';
+        document.getElementById("i1").style.display='none';
+        document.getElementById("p1").style.display='none';
+      });
+
+      var button = document.getElementById("i2");
+        button.addEventListener("click", function() {
+            window.location="https://www.instagram.com/p/ClLE1jkSS7f/?igshid=MDJmNzVkMjY%3D";
+      });
+
+      var input = document.getElementById("tb");
+      input.addEventListener("keypress", function(event) {
+      if (event.key === "Enter") {
+          event.preventDefault();
+          let ans1="sample collection";
+          let ans2="collection of samples";
+          let ans3="collection of sample";
+          let ans="sample";
+          let userans=document.getElementById("tb").value;
+          if(userans==ans1 || userans==ans2 || userans==ans3 || userans==ans4){
+              alert("correct answer");
+             // window.location="clue4.html";
+           }
+           else{
+            alert("wrong try again");
+           }
+      }
+     });
+
+      </script>    
+    </body>
+</html>

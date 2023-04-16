@@ -1,0 +1,71 @@
+<html lang="en">
+    <head>
+        <title>HOME</title>
+        <link rel="stylesheet" href=c1style.css>
+    </head>
+    <body>
+        <div class="main">
+          <div class="navbar">
+            <div class="icon">
+              <h2 class="logo">ENIGMA</h2>
+            </div>
+              
+          </div>
+            <div class="content" id="div1">
+            
+             <img src="treasure.png" id="i1">
+             <img src="manuscript.png" id="i2">
+             <p id="p2" style="color: whitesmoke;" style=>Info!!</p>
+
+             <button id="tapbt" onclick="clue()">Tap here to unlock the clue </button>
+             <p id="cluep" style="display: none;">"Call me old-fashioned, but I'm still the way to go.
+                I'm a place to call home when you're on the go.
+                Find me on the street, with my red shining bright.
+                Use me to find the next clue in sight."</p>
+
+            <p id="infp" style="display: none;">Welcome to the treasure hunt game! Your first hint is hidden in the clue.
+              Once you have found the clue, you will need to solve it to reveal the location of the next clue. 
+               Once you have successfully solved the first clue , then you will be forwarded to the next page.
+               Follow the clues in order and remember to work as a team. Good luck and happy hunting!"</p>
+
+              </button>
+              <label id="l1">Enter your Answer :</label>
+              <input type="text" id="ans" size="30">
+
+          </div>
+        </div>   
+      </div>   
+      <script>
+        var button = document.getElementById("i2");
+        button.addEventListener("click", function() {
+ 
+     // Add your action here
+     document.getElementById("infp").style.display='block';
+     document.getElementById("i2").style.display='none';
+     document.getElementById("p2").style.display='none';
+ });
+
+     function clue(){
+       document.getElementById("tapbt").style.display='none';
+       document.getElementById("cluep").style.display = "block";
+     }
+
+     var input = document.getElementById("ans");
+     input.addEventListener("keypress", function(event) {
+     if (event.key === "Enter") {
+          event.preventDefault();
+          let answer="telephone booth";
+          let userans=document.getElementById("ans").value;
+          if(userans==answer){
+              window.location="c1ans.html"
+           }
+           else{
+            alert("Wrong!! Try again!");
+           }
+      }
+     });
+
+     
+      </script>
+    </body>
+</html>

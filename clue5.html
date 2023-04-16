@@ -1,0 +1,81 @@
+<html lang="en">
+    <head>
+        <title>Vaccine</title>
+        <link rel="stylesheet" href=c5style.css>
+    </head>
+    <body>
+        <div class="main">
+          <div class="navbar">
+            <div class="icon">
+              <h2 class="logo">ENIGMA</h2>
+            </div>           
+          </div>
+            <div class="content" id="div1">   
+               <img src="manuscript.png" id="i1">
+               <p id="p1" style="color: whitesmoke;" style=>Info!!</p>
+               <p id="infp" style="display: none;">"Well done on successfully unlocking the door! Your next task is to locate the elusive vaccine from the 1940s pandemic amidst a sea of vials. Each vaccine is marked with a unique number, so your challenge is to crack the code and identify the correct one. Use the clues provided to guide you, and put your puzzle-solving skills to the test to emerge victorious!"</p>
+             
+               <img src="unlocked.png" id="i2">
+               <p id="p2">Crack the Code</p>
+               <input type="text" id="t1" style="width: 3%;">
+               <input type="text" id="t2"style="width: 3%;">
+               <input type="text" id="t3"style="width: 3%;">
+               <button id="cbt" onclick="check()">Check</button>
+
+               <button id="getc" onclick="clues()">Get Clues</button>
+
+               <p id="cp1" style="display: none;">" 3 4 2 " One number is correct but wrongly placed</p><br>
+               <p id="cp2"style="display: none;">" 2 7 3 " One number is correct but wrongly placed</p><br>
+               <p id="cp3"style="display: none;">" 1 6 5 " Two numbers are correct and well placed</p><br>
+               <p id="cp4"style="display: none;">" 8 5 3 " Two numbers are correct but wrongly placed</p><br>
+               <p id="cp5"style="display: none;">" 2 6 4 " Nothing is correct </p><br>
+
+          </div>
+        </div>   
+      </div>   
+      <script>
+        var button = document.getElementById("i1");
+        button.addEventListener("click", function() {
+ 
+     // Add your action here
+     document.getElementById("infp").style.display='block';
+     document.getElementById("i1").style.display='none';
+     document.getElementById("p1").style.display='none';
+ });
+
+    function check(){
+
+        let res=true;
+
+        var n1 = document.getElementById("t1");
+        let ans1=1;
+        let ua1=document.getElementById("t1").value;
+
+        var n2= document.getElementById("t2");
+        let ans2=3;
+        let ua2=document.getElementById("t2").value;
+
+        var n3= document.getElementById("t3");
+        let ans3=5;
+        let ua3=document.getElementById("t3").value;
+
+     if(ua1==ans1 && ua2==ans2 && ua3==ans3){
+        alert("Correct");
+     }
+     else{
+        alert("incorrect");
+     }
+    }
+     function clues(){
+        document.getElementById("cp1").style.display='block';
+        document.getElementById("cp2").style.display='block';
+        document.getElementById("cp3").style.display='block';
+        document.getElementById("cp4").style.display='block';
+        document.getElementById("cp5").style.display='block';
+        document.getElementById("getc").style.display='none';
+
+
+     }
+      </script>
+    </body>
+</html>

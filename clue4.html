@@ -1,0 +1,68 @@
+<html lang="en">
+    <head>
+        <title>Vaccine</title>
+        <link rel="stylesheet" href=c4style.css>
+    </head>
+    <body>
+        <div class="main">
+          <div class="navbar">
+            <div class="icon">
+              <h2 class="logo">ENIGMA</h2>
+            </div>           
+          </div>
+            <div class="content" id="div1">   
+             <img src="detective.png" id="i1">
+             <img src="manuscript.png" id="i2">
+             <p id="p2" style="color: whitesmoke;" style=>Info!!</p>
+             <p id="cluep" style="display: none;">"He is known as the 'Father of Medicine'. The year of his birth is your password to unlock the door".</p>
+             <button id="tapbt" onclick="clue()">Tap here to unlock the clue </button>
+
+            <p id="infp" style="display: none;">Well Done!!<br>
+                Now use the sample collected and head to the Research centre. Note that the research centre is locked. Use the clue to unlock the door.</p>
+              <label id="l1">Enter your Answer :</label>
+              <input type="text" id="ans" size="30">
+
+          </div>
+        </div>   
+      </div>   
+      <script>
+        var button = document.getElementById("i2");
+        button.addEventListener("click", function() {
+ 
+     // Add your action here
+     document.getElementById("infp").style.display='block';
+     document.getElementById("i2").style.display='none';
+     document.getElementById("p2").style.display='none';
+ });
+
+ var button = document.getElementById("tapbt");
+        button.addEventListener("click", function() {
+ 
+     // Add your action here
+     document.getElementById("cluep").style.display='block';
+     document.getElementById("i1").style.display='none';
+     document.getElementById("tapbt").style.display='none';
+ });
+
+     var input = document.getElementById("ans");
+     input.addEventListener("keypress", function(event) {
+     if (event.key === "Enter") {
+          event.preventDefault();
+          let ans1=460;
+          let ans2=470;
+          let userans=document.getElementById("ans").value;
+          if(userans==ans1 || userans==ans2){
+            window.alert("Correct answer");
+              window.location="dend2.html";
+           }
+          else {
+            alert("Wrong! Try again");
+           }
+      }
+     });
+
+
+     
+      </script>
+    </body>
+</html>

@@ -1,0 +1,120 @@
+*{
+    margin:0;
+    padding:0;
+   }
+   body{
+       height: 100%;
+       width:100vw;
+       overflow-x: hidden;
+      }
+   .main{
+    width: 100%;
+     background: linear-gradient(to top,rgba(10, 9, 9, 0.699)50%,rgba(10, 9, 9, 0.699)50%), url(end.jpg); 
+    /* background-image: url(interior.webp); */
+    background-size: cover;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    background-position : center;
+    background-size:cover;
+    height: 109vh;
+    background-attachment: fixed;
+   }
+   .navbar
+   {
+    width: 1200px;
+    height: 75px;
+    margin: auto;
+   }
+   .icon
+   {
+    width: 400px;
+    float:left;
+    height:70px;
+    padding-top:10px;
+    white-space:nowrap;
+    position: relative;
+    right:120px;
+    top:5px;
+   }
+   .logo
+   {
+    color:rgb(87, 76, 248);
+    font-size: 35px;
+    font-family: 'Courier New', monospace;
+    padding-left:20px ;
+    float: left;
+    padding-top:10px;
+   }
+   #myText1{
+    position: absolute;
+    left: 220px;
+    font-size: 20px;
+    top:500px;
+    font-family: Times New Roman;
+    font-weight: bold;
+    color: white;
+   }
+  
+   .content{
+       width: 100%;
+       height: auto;
+       margin: auto;
+       color:white;
+   
+   } 
+ 
+  #i1{
+    height: 125px;
+    width: 125px;
+    position: absolute;
+    top:250px ;
+    left: 1240px;
+  }
+  #i2{
+    height: 120px;
+    width: 120px;
+    position: absolute;
+    top:265px ;
+    left: 690px;
+  }
+  #bt{
+    position: absolute;
+    top: 640px;
+    left: 680px;
+    width:8%;
+    font-weight:bold;
+    color: rgb(0, 0, 0);
+    text-align: left;
+    padding: 12px 25px;
+    white-space: nowrap;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    background: #f49976;
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+  
+  }
+      #l1 {
+        font-family: 'Courier New';
+        position: absolute;
+        left: 360px;
+        top: 35px;
+        color: white;
+        font-weight: bold;
+        font-size: x-large;
+       }
+     
+     #infp{
+    color: rgb(255, 231, 231);
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Courier New';
+    text-align: justify;
+    position: absolute;
+    top: 100px;
+    left:250px;
+    width: 1000px;
+    height: 300px;
+     }

@@ -1,0 +1,133 @@
+<html lang="en">
+    <head>
+        <title>HOME</title>
+        <link rel="stylesheet" href=c2style.css>
+    </head>
+    <body>
+        <div class="main">
+          <div class="navbar">
+            <div class="icon">
+              <h2 class="logo">ENIGMA</h2>
+            </div>    
+          </div>
+            <div class="content" id="div1">
+              <img src="gold chest1.png" id="c1">
+              <img src="gold chest1.png" id="c2">
+              <img src="gold chest1.png" id="c3">
+              <img src="gold chest1.png" id="c4">
+              <img src="gold chest1.png" id="c5">
+              <img src="gold chest1.png" id="c6">
+
+              <img src="rocks.png" id="op1" style="display: none;">
+              <img src="rocks.png" id="op2" style="display: none;">
+              <img src="gun.png"   id="op3" style="display: none;">
+              <img src="rocks.png" id="op4" style="display: none;">
+              <img src="rocks.png" id="op5" style="display: none;">
+              <img src="rocks.png" id="op6" style="display: none;">
+              
+              <button id="next" style="display: none;" onclick="func2()">Move to next Clue</button>
+              <p id="p1">Read the info and proceed!!</p>
+              <img src="manuscript.png" id="i2">
+              <p id="p2" style="color: whitesmoke;">Info!!</p>
+              <p id="infp" style="display: none;">On your way to search for the medical gun, you came across six chests, but only one of them contained the medical gun. Keep in mind that you only have three chances to find the correct chest.</p>
+              
+          </div>
+        </div>   
+      </div>   
+      <script>
+        var button = document.getElementById("i2");
+        button.addEventListener("click", function() {
+
+        document.getElementById("infp").style.display='block';
+        document.getElementById("i2").style.display='none';
+        document.getElementById("p2").style.display='none';
+      });
+        let chances=0;
+
+        var ch1=document.getElementById("c1");
+        ch1.addEventListener("click",function(){
+          document.getElementById("c1").style.display='none';
+          if(chances>=3){
+            alert("Chances completed Try again");
+            window.location="clue2.html";
+          }
+          else{
+            document.getElementById("op1").style.display='block';
+          }
+          chances+=1;
+        });
+
+        var ch2=document.getElementById("c2");
+        ch2.addEventListener("click",function(){
+          document.getElementById("c2").style.display='none';
+          if(chances>=3){
+            alert("Chances completed Try again");
+            window.location="clue2.html";
+          }
+          else{
+            document.getElementById("op2").style.display='block';
+          }
+          chances+=1;
+        });
+
+        var ch3=document.getElementById("c3");
+        ch3.addEventListener("click",function(){
+          document.getElementById("c3").style.display='none';
+          if(chances>=3){
+            alert("Chances completed Try again");
+            //window.location="clue1.html";
+          }
+          else{
+            document.getElementById("op3").style.display='block';
+            alert("Yay! you found the Medi-gun!!");
+            document.getElementById("next").style.display='block';
+          }
+          chances+=1;
+        });
+
+        var ch4=document.getElementById("c4");
+        ch4.addEventListener("click",function(){
+          document.getElementById("c4").style.display='none';
+          if(chances>=3){
+            alert("Chances completed Try again");
+            window.location="clue2.html";
+          }
+          else{
+            document.getElementById("op4").style.display='block';
+          }
+          chances+=1;
+        });
+
+        var ch5=document.getElementById("c5");
+        ch5.addEventListener("click",function(){
+          document.getElementById("c5").style.display='none';
+          if(chances>=3){
+            alert("Chances completed Try again");
+            window.location="clue2.html";
+          }
+          else{
+            document.getElementById("op5").style.display='block';
+          }
+          chances+=1;
+        });
+
+        var ch6=document.getElementById("c6");
+        ch6.addEventListener("click",function(){
+          document.getElementById("c6").style.display='none';
+          if(chances>=3){
+            alert("Chances completed Try again");
+            window.location="clue2.html";
+          }
+          else{
+            document.getElementById("op6").style.display='block';
+          }
+          chances+=1;
+        });
+
+        function func2(){
+          window.location="dend1.html"
+        }
+
+      </script>    
+    </body>
+</html>

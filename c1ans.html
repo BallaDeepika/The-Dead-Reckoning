@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="c1ans.css">
+</head>
+<body>
+    
+</body>
+</html>
+<body>
+    <div class="main">
+      <div class="navbar">
+        <div class="icon">
+          <h2 class="logo">ENIGMA</h2>
+        </div>      
+      </div>
+      <div class="content" id="div1">
+         <img src="telephonebooth.jpg" id="i1">
+         <img src="manuscript.png" id="i2">
+         <img src="booth.png" id="i3">
+         <p id="p1">Read the info and enter the telephone booth</p>
+         <p id="p2" style="color: whitesmoke;" style=>Info!!</p>
+
+         <p id="infp" style="display: none;">Yay! you found the clue. Now click on the telephone booth and make a call to the RAW & IB organisation. To help you, the designers have already developed the conversation. Read it by clicking on the telephone booth. Good luck and happy hunting!"</p>
+        <p id="convo" style="display: none;">
+           <b>Prathap :</b>  Hello, this is Dr Prathap Reddy speaking.<br><br>
+            
+          <b>RAW & BI :</b>   Hi Dr. Prathap, We've heard reports of a virus outbreak in your city. Can you provide us with more information on the situation?<br><br>
+            
+           <b>Prathap :</b>Yes, we've identified a new virus strain where lot of people are behaving irrationally and even violently. It's been difficult to get everyone to comply. I doubt that this virus is similar to the virus outbreak in 1940s.<br><br>
+            
+            <b>RAW & BI : </b>We understand. That's why we're reaching out to you. We have a new medical gun that temporarily sedates infected individuals, which can help prevent them from spreading the virus further temporarily. We'll provide the location of research centre where the vaccine for 1940s pandemic lies and guns for you.
+        </p>
+
+        <button id="bt" style="display: none;" onclick="func()">Find the gun</button>
+
+
+      </div>
+    </div>    
+  
+    <script>
+
+var button = document.getElementById("i1");
+    button.addEventListener("click", function() {
+    document.getElementById("convo").style.display='block';
+    document.getElementById("bt").style.display='block';
+    document.getElementById("i1").style.display='none';
+   
+ });
+
+
+ var button = document.getElementById("i2");
+        button.addEventListener("click", function() {
+ 
+     // Add your action here
+     document.getElementById("infp").style.display='block';
+     document.getElementById("i2").style.display='none';
+     document.getElementById("p2").style.display='none';
+ });
+
+ function func(){
+  window.location="clue2.html";
+ }
+    </script>
+
+ </body>
+</html>

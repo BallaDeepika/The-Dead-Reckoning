@@ -1,0 +1,191 @@
+*{
+    margin:0;
+    padding:0;
+   }
+   body{
+       height: 100%;
+       width:100vw;
+       overflow-x: hidden;
+      }
+   .main{
+    width: 100%;
+     background: linear-gradient(to top,rgba(10, 9, 9, 0.699)50%,rgba(10, 9, 9, 0.699)50%), url(chest.jpeg); 
+    /* background-image: url(interior.webp); */
+    background-size: cover;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    background-position : center;
+    background-size:cover;
+    height: 109vh;
+    background-attachment: fixed;
+   }
+   .navbar
+   {
+    width: 1200px;
+    height: 75px;
+    margin: auto;
+   }
+   .icon
+   {
+    width: 400px;
+    float:left;
+    height:70px;
+    padding-top:10px;
+    white-space:nowrap;
+    position: relative;
+    right:120px;
+    top:5px;
+   }
+   .logo
+   {
+    color:rgb(87, 76, 248);
+    font-size: 35px;
+    font-family: 'Courier New', monospace;
+    padding-left:20px ;
+    float: left;
+    padding-top:10px;
+   }
+   .content{
+       width: 100%;
+       height: auto;
+       margin: auto;
+       color:white;
+   
+   } 
+#c1{
+    height: 80px;
+    width: 80px;
+    position: absolute;
+    top:245px ;
+    left: 900px;
+}
+#c2{
+    height: 80px;
+    width: 80px;
+    position: absolute;
+    top:245px ;
+    left: 1080px;
+}
+#c3{
+    height: 80px;
+    width: 80px;
+    position: absolute;
+    top:245px ;
+    left: 1270px;
+}
+#c4{
+    height: 80px;
+    width: 80px;
+    position: absolute;
+    top:425px ;
+    left: 900px;
+}
+#c5{
+    height: 80px;
+    width: 80px;
+    position: absolute;
+    top:425px ;
+    left: 1080px;
+}
+#c6{
+    height: 80px;
+    width: 80px;
+    position: absolute;
+    top:425px ;
+    left: 1270px;
+}
+#op1{
+    height: 80px;
+    width: 80px;
+    position: absolute;
+    top:245px ;
+    left: 900px;
+}
+#op2{
+    height: 80px;
+    width: 80px;
+    position: absolute;
+    top:245px ;
+    left: 1080px;
+}
+#op3{
+    height: 80px;
+    width: 80px;
+    position: absolute;
+    top:245px ;
+    left: 1270px;
+}
+#op4{
+    height: 80px;
+    width: 80px;
+    position: absolute;
+    top:425px ;
+    left: 900px;
+}
+#op5{
+    height: 80px;
+    width: 80px;
+    position: absolute;
+    top:425px ;
+    left: 1080px;
+}
+#op6{
+    height: 80px;
+    width: 80px;
+    position: absolute;
+    top:425px ;
+    left: 1270px;
+}
+
+#p1{
+    color: aliceblue;
+    font-family: 'Courier New', Courier, monospace;
+    position: absolute;
+    left: 1000px;
+    top: 150px;
+    font-weight: 500;
+ }
+#i2{
+    height: 120px;
+    width: 120px;
+    position: absolute;
+    top:265px ;
+    left: 140px;
+}
+#p2{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: block;
+    position: absolute;
+    top: 410px;
+    left:180px;
+  }
+
+#next{
+  position: absolute;
+  top: 560px;
+  left: 1030px;
+  width:12%;
+  color: rgb(0, 0, 0);
+  font-weight: bolder;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  padding: 10px 30px;
+  cursor: pointer;
+  display: block;
+  margin: auto;
+  background-color: #a8bbf8;
+  border: 0;
+  outline: none;
+  border-radius: 30px;
+}
+     #infp{
+    color: rgb(255, 231, 231);
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Courier New';
+    text-align: justify;
+    position: absolute;
+    top: 250px;
+    left:50px;
+    width: 400px;
+    height: 300px;
+} 

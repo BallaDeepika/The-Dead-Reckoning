@@ -1,0 +1,67 @@
+<html lang="en">
+    <head>
+        <title>End</title>
+        <link rel="stylesheet" href=conc.css>
+    </head>
+    <body>
+        <div class="main">
+          <div class="navbar">
+            <div class="icon">
+              <h2 class="logo">ENIGMA</h2>
+            </div>
+              
+          </div>
+            <div class="content" id="div1">
+             
+             <img src="treasure.png" id="i2">
+             <p id="p2" style="color: whitesmoke;" style=></p>
+
+             
+             
+
+
+            <p id="infp" style="display: none;">Once the zombie outbreak began, Prathap knew that finding a cure was crucial. He was a brilliant scientist
+               and had spent countless hours in his lab trying to develop a vaccine.
+
+              Worried by the discovery of outbreak, Prathap immediately contacted the government agencies, RAW and BI. 
+              He explained his findings and requested their assistance..<br>
+              
+              At first, there was skepticism. The zombie virus had proven to be extremely difficult to cure,
+               and has low success rate in finding the vaccine. However, to their surprise, the vaccine worked.
+                It cured the first test subject, a zombie that had been captured and brought to the lab for testing.
+              
+              Overjoyed, Prathap and the government agencies began working tirelessly to mass-produce the vaccine.<br>
+               They worked around the clock, with the help of many other scientists and healthcare professionals, to create as much of the vaccine as possible. It wasn't long before the vaccine was ready for distribution. The government agencies worked together to ensure that the vaccine was distributed fairly and efficiently. They set up vaccination centers in every city and town, and people were encouraged to get vaccinated as soon as possible.
+              
+              The vaccine worked perfectly, and soon the population began to recover.<br> People who had been infected
+               with the zombie virus were cured, and the threat of a zombie apocalypse was finally eliminated.
+                The world rejoiced as news of the cure spread, and Prathap was hailed as a hero.
+              
+              In the end, Prathap's dedication and hard work paid off. He had found the cure for the zombie
+               virus and had saved countless lives. The world would never forget the bravery and ingenuity of 
+               this brilliant scientist who had changed the course of history.</p>
+
+             
+              <label id="l1">Finally you have made it . Thank you for saving INDIA!!</label>
+              <button id="bt" onclick="func()">Play again</button>
+             
+
+          </div>
+        </div>   
+      </div>   
+      <script>
+        var button = document.getElementById("i2");
+        button.addEventListener("click", function() {
+ 
+     // Add your action here
+     document.getElementById("infp").style.display='block';
+     document.getElementById("i2").style.display='none';
+     document.getElementById("p2").style.display='none';
+ });
+
+ function func(){
+    window.location="start.html";
+ }
+      </script>
+    </body>
+</html>
